@@ -16,13 +16,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Auteur:
-Sanne 't Hooft (vervangen door jouw naam)
+Dax de Kort
 
 #### Je startniveau:
-hier je startniveau (kies uit zwart, rood óf blauw)
+Blauw
 
 #### Je focus:
-hier je focus (kies uit responsive óf surface plane)
+Responsive
  
 </details>
 
@@ -36,11 +36,11 @@ hier je focus (kies uit responsive óf surface plane)
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
-link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+Ik ga de website van een van mijn favoriete artiesten Kid Cudi namaken. De site lijkt me een leuke uitdaging om na te maken omdat ik niet zo goed ben in coderen en het me tof lijkt als ik dit kan namaken. Zo ziet de site er op het moment uit: http://www.kidcudi.com/music 
 
 #### Screenshot(s) van de eerste pagina (small screen): 
-hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+http://www.kidcudi.com/music  
+[fotos](images/Screenshot1.png)
 
 #### Screenshot(s) van de tweede pagina (small screen):
 hier de naam van de pagina  
