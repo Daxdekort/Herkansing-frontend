@@ -40,7 +40,7 @@ Ik ga de website van een van mijn favoriete artiesten Kid Cudi namaken. De site 
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 http://www.kidcudi.com/music  
-[fotos](images/Screenshot1.png)
+<img src="images/Screenshot1.png" width="375px" alt="Homepage">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 hier de naam van de pagina  
