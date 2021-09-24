@@ -3,3 +3,59 @@
   box-sizing:border-box;  
 }
 
+.logo {
+   height: 40px;
+    width: 40px;
+    position: relative;
+    left: 345px;
+     margin: 0;
+    padding: 0;
+}
+
+ul {
+   list-style-type: none;
+}
+
+ header nav ul {
+       display: flex;
+       padding: 1em;
+       flex: auto;
+       list-style: none;
+       justify-content: center;
+   }
+
+ header nav ul li a {
+       padding: .2em;
+       margin: .2em;
+       text-decoration: none;
+       color: black;
+       font-size: 1.3em;
+       font-family: 'Nanum Pen Script', cursive;
+       text-transform:uppercase;
+   }
+
+.MOTM3 {
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.streamFP{
+    font-size: 2em;
+       font-family: 'Nanum Pen Script', cursive;
+       text-transform:uppercase;
+    padding: .2em;
+       margin: .2em;
+     display: flex;
+    justify-content: center; 
+}
+
+.socialicons{
+    padding: .2em;
+    margin: .2em;
+    width: 150px;
+    height: 50px;
+    
+}
