@@ -1,22 +1,61 @@
-/* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;  
-}
+   /* CSS Document */
+   /*alle afbeeldingen komen van https://www.mirror-mirror.nl/*/
+   *,
+   *::after,
+   *::before {
+       box-sizing: border-box;
+   }
 
-.logo {
-   height: 40px;
-    width: 40px;
-    position: relative;
-    left: 345px;
-     margin: 0;
-    padding: 0;
-}
+   img {
+       display: flex;
+   }
 
-ul {
-   list-style-type: none;
-}
 
- header nav ul {
+   /*header*/
+
+   #logo {
+       width: 45px;
+       padding-top: 1em;
+       margin: auto;
+       max-width: calc(100% - 20px);
+       position: relative;
+       z-index: 2;
+   }
+
+
+   /*slider*/
+
+   .slider {
+       display: flex;
+       overflow-x: auto;
+       z-index: 1;
+       margin: -7em 0 0 0;
+   }
+
+   .slide {
+       width: 100%;
+       height: auto;
+   }
+
+
+   /*nav*/
+
+   .menu {
+       padding-top: 17em;
+   }
+
+   nav {
+       display: flex;
+       color: white;
+       width: 100%;
+       z-index: 2;
+   }
+
+   main ul li a {
+       list-style: none;
+   }
+
+   header nav ul {
        display: flex;
        padding: 1em;
        flex: auto;
@@ -24,38 +63,555 @@ ul {
        justify-content: center;
    }
 
- header nav ul li a {
-       padding: .2em;
-       margin: .2em;
+   header nav ul li a {
+       padding: .5em;
+       margin: .5em;
        text-decoration: none;
        color: black;
-       font-size: 1.3em;
+       font-size: 30px;
        font-family: 'Nanum Pen Script', cursive;
-       text-transform:uppercase;
+       text-transform: uppercase;
    }
 
-.MOTM3 {
-    margin: 0 auto;
-    width: 500px;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-}
-
-.streamFP{
-    font-size: 2em;
+   #inspiration nav ul li a {
+       padding: .5em;
+       margin: .5em;
+       text-decoration: none;
+       color: white;
+       font-size: 2em;
        font-family: 'Nanum Pen Script', cursive;
-       text-transform:uppercase;
-    padding: .2em;
-       margin: .2em;
-     display: flex;
-    justify-content: center; 
-}
+       text-transform: uppercase;
+   }
 
-.socialicons{
-    padding: .2em;
-    margin: .2em;
-    width: 150px;
-    height: 50px;
-    
-}
+   #inspiration li a {
+       text-shadow: .1em .1em #EE1B49;
+   }
+
+   #rol nav ul li a {
+       text-decoration: none;
+       color: white;
+       font-size: 2em;
+       font-family: 'Nanum Pen Script', cursive;
+       text-transform: uppercase;
+   }
+
+   #rol li a {
+       text-shadow: .1em .1em #EE1B49;
+   }
+
+
+   /*header image achtergrond en music*/
+
+   #inspiration {
+       background-image: url(../images1/background.jpeg);
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: cover;
+   }
+
+   #rol {
+       background-image: url(../images1/videosbackground.jpeg);
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: cover;
+   }
+
+   /*main*/
+
+   blockquote {
+       font-family: 'Nanum Pen Script', cursive;
+       color: black;
+       text-align: center;
+       font-size: 1.2em;
+   }
+
+   time {
+       font-family: 'Nanum Pen Script', cursive;
+       font-style: italic;
+       font-weight: 400;
+       font-size: 1em;
+       color: rgba(0, 0, 0, 0.5);
+       text-align: center;
+       display: block;
+       padding-bottom: 1em;
+       margin: auto;
+   }
+
+   .hashtag {
+       font-size: 1.5em;
+       font-family: 'Nanum Pen Script', cursive;
+       color: black;
+       margin: 0;
+       padding-bottom: 1em;
+       text-align: center;
+       text-transform: uppercase;
+
+   }
+
+   h1 {
+       font-size: 1.5em;
+       font-family: 'Nanum Pen Script', cursive;
+       color: black;
+       margin: 0;
+       padding-bottom: 1em;
+       text-align: center;
+       text-shadow: .08em .08em #EE1B49;
+       text-transform: uppercase;
+   }
+
+   h2 {
+       font-family: 'Nanum Pen Script', cursive;
+       color: black;
+       margin: 0;
+       padding: .5em;
+       text-align: center;
+       text-transform: uppercase;
+   }
+
+   h3 {
+       font-size: 2em;
+       font-family: 'Nanum Pen Script', cursive;
+       color: black;
+       margin: 0;
+       padding: .5em;
+       text-align: center;
+       text-transform: uppercase;
+   }
+
+   h4 {
+       font-family: 'Antic Didone', serif;
+       color: black;
+       margin: 0;
+       padding-top: 2em;
+       padding-bottom: 2em;
+       text-align: center;
+       text-transform: uppercase;
+   }
+
+   .verstop {
+       overflow: hidden;
+       border: 0;
+       clip: rect(1px, 1px, 1px, 1px);
+       clip-path: inset(50%);
+       height: 1px;
+       margin: -1px;
+       padding: 0;
+       position: absolute;
+       width: 1px;
+       word-wrap: normal !important;
+   }
+
+   .albums {
+       font-size: 2em;
+       font-family: 'Nanum Pen Script', cursive;
+       color: white;
+       margin: 0;
+       padding-bottom: 1em;
+       text-align: center;
+       text-shadow: .08em .08em #EE1B49;
+   }
+
+   section img {
+       padding: 1em;
+       padding-bottom: 1.2em;
+   }
+
+   section img {
+       width: 100%;
+   }
+
+   article section img {
+       width: 100%;
+   }
+
+   section ul li {
+       list-style: none;
+   }
+
+   section ul {
+       padding: 0;
+   }
+
+
+   .banner {
+       padding: .5em;
+       width: 100%;
+       height: auto;
+   }
+
+   textarea {
+       width: 100%;
+       line-height: 1.5em;
+       height: 150px;
+       border-radius: .5em;
+   }
+
+   a {
+       list-style: none;
+       text-decoration-line: none;
+   }
+
+   #rol h1 {
+       padding-top: 2em;
+       color: white;
+       font-size: 2em;
+   }
+
+   #rol time {
+       color: white;
+       font-size: 1.5em;
+   }
+
+   .videos{
+       display: flex;
+       margin: auto;
+       max-width: calc(70% - 20px);
+   }
+
+   .pnewsletter {
+       padding-top: 1em;
+       font-family: 'Antic Didone', serif;
+       color: black;
+       text-align: center;
+       font-size: 1.2em;
+   }
+
+   .divider {
+       border-top: .2em solid #EE1B49;
+       height: .5em;
+       margin: 1.5em 0;
+       width: 80%;
+   }
+
+   /*footer*/
+
+   footer {
+       display: inline-block;
+       width: 100%;
+       background-color: #D8D4D8;
+       padding: 3em;
+       justify-content: center;
+   }
+
+   footer ul {
+       display: flex;
+       flex: auto;
+       padding-bottom: 1em;
+       color: white;
+   }
+
+   footer ul li {
+       display: flex;
+       flex: auto;
+       list-style: none;
+   }
+
+   footer img {
+       width: 3em;
+       height: auto;
+   }
+
+   .icons {
+       display: flex;
+       justify-content: center;
+   }
+
+   p {
+       font-family: proxima-nova, sans-serif;
+       font-style: normal;
+       font-weight: 100;
+       color: black;
+       text-align: center;
+   }
+
+   p a {
+       text-decoration: none;
+       color: black;
+       text-transform: uppercase;
+   }
+
+   section article button {
+       display: flex;
+       align-content: center;
+       justify-content: center;
+       text-align: center;
+   }
+
+   /*states*/
+
+   /*a*/
+   a:hover {
+       box-shadow: inset 0 -1em rgba(0, 0, 0, .08), 0 0 1em rgba(0, 0, 0, .3);
+       border-radius: .5em;
+       text-decoration: underline;
+   }
+
+   a:focus {
+       box-shadow: inset 0 -1em rgba(0, 0, 0, .08), 0 0 1em rgba(0, 0, 0, .9);
+       border-radius: .5em;
+       outline-color: #EE1B49;
+       text-decoration: underline;
+   }
+
+   a:active {
+       box-shadow: inset 0 -1em rgba(0, 0, 0, .08), 0 0 1em rgba(0, 0, 0, .9);
+       border-radius: .5em;
+       text-decoration: underline;
+   }
+
+   /*images, heading en sign up button*/
+   .signupbutton:hover {
+       background-color: #f2a3f5;
+       box-shadow: inset 0 -1em rgba(0, 0, 0, .08), 0 0 1em rgba(0, 0, 0, .9);
+   }
+
+   .signupbutton:active {
+       box-shadow: inset 0 -1em rgba(0, 0, 0, .08), 0 0 1em rgba(0, 0, 0, .5);
+       transform: scale(0.9);
+       border-color: #EE1B49;
+   }
+
+   .signupbutton:focus {
+       background-color: #f2a3f5;
+       outline-color: #EE1B49;
+   }
+
+   .okbutton:hover {
+       background-color: #f2a3f5;
+       box-shadow: inset 0 -1em rgba(0, 0, 0, .08), 0 0 1em rgba(0, 0, 0, .9);
+   }
+
+   .okbutton:active {
+       box-shadow: inset 0 -1em rgba(0, 0, 0, .08), 0 0 1em rgba(0, 0, 0, .5);
+       transform: scale(0.9);
+       border-color: #EE1B49;
+   }
+
+   .okbutton:focus {
+       background-color: #f2a3f5;
+       outline-color: #EE1B49;
+   }
+
+   .imginspo:hover {
+       opacity: .5;
+   }
+
+   .imginspo:active {
+       transform: scale(0.9);
+   }
+
+   .imginspo:focus {
+       box-shadow: inset 0 -1em rgba(0, 0, 0, .08), 0 0 1em rgba(0, 0, 0, .5);
+       outline-color: #EE1B49;
+   }
+
+
+   .hinspo:hover {
+       text-decoration: underline;
+   }
+
+   .hashtag:hover {
+       text-decoration: underline;
+   }
+
+   .hashtag:focus {
+       box-shadow: inset 0 -1em rgba(0, 0, 0, .08), 0 0 1em rgba(0, 0, 0, .5);
+       outline-color: #EE1B49;
+   }
+
+   /*like button*/
+   .button:hover {
+       background-color: #f2a3f5;
+       box-shadow: inset 0 -1em rgba(0, 0, 0, .08), 0 0 1em rgba(0, 0, 0, .9);
+   }
+
+   button:active {
+       box-shadow: inset 0 -1em rgba(0, 0, 0, .08), 0 0 1em rgba(0, 0, 0, .5);
+       transform: scale(0.9);
+       border-color: #EE1B49;
+   }
+
+   .button:focus {
+       background-color: #f2a3f5;
+       outline-color: #EE1B49;
+   }
+
+   button:focus {
+       outline-color: #f2a3f5;
+       outline-width: 1em;
+   }
+
+   /*hartje*/
+   .hart:hover {
+       box-shadow: inset 0 -1em rgba(0, 0, 0, .08), 0 0 1em rgba(0, 0, 0, .5);
+       border-radius: .9em;
+   }
+
+   .hart:focus {
+       box-shadow: inset 0 -1em rgba(0, 0, 0, .08), 0 0 1em rgba(0, 0, 0, .5);
+   }
+
+   .hart:active {
+       box-shadow: inset 0 -1em rgba(0, 0, 0, .08), 0 0 1em rgba(0, 0, 0, .5);
+       border-radius: .9em;
+   }
+
+
+   /*inspiration like animatie*/
+
+   .button {
+       display: block;
+       color: white;
+       border: none;
+       font-family: 'Nanum Pen Script', cursive;
+       font-style: normal;
+       font-weight: 100;
+       font-size: 1.5em;
+       padding-left: 1em;
+       padding-right: 1em;
+       padding-top: .2em;
+       padding-bottom: .2em;
+       background: #EE1B49;
+       box-shadow: inset 0 -1em rgba(0, 0, 0, .04), 0 0 .5em rgba(0, 0, 0, .5);
+       border-radius: .5em;
+   }
+
+   .hart {
+       position: fixed;
+       box-shadow: inset 0 -1em rgba(0, 0, 0, .04), 0 0 .5em rgba(0, 0, 0, 1.5);
+       background-color: #EE1B49;
+       border-color: #EE1B49;
+       border-radius: 2em;
+       padding: .5em;
+       width: 3em;
+   }
+
+   div.hartje {
+       position: fixed;
+       animation-name: hartje;
+       animation-duration: .5s;
+   }
+
+   @keyframes hartje {
+       from {
+           transform: rotate(0deg);
+       }
+
+       to {
+           transform: rotate(360deg);
+       }
+   }
+
+   /*inspiration feedback popup*/
+
+   button {
+       margin: auto;
+       max-width: calc(100% - 20px);
+       text-transform: uppercase;
+   }
+
+   .signupbutton {
+       display: block;
+       color: white;
+       border: none;
+       font-family: proxima-nova, sans-serif;
+       font-style: normal;
+       font-weight: 100;
+       font-size: 1.5em;
+       padding-top: .5em;
+       padding-bottom: .5em;
+       background: #EE1B49;
+       box-shadow: inset 0 -1em rgba(0, 0, 0, .04), 0 0 .5em rgba(0, 0, 0, .5);
+       border-radius: .5em;
+       margin-bottom: 1em;
+   }
+
+   .okbutton {
+       display: block;
+       color: white;
+       border: none;
+       font-family: proxima-nova, sans-serif;
+       font-style: normal;
+       font-weight: 100;
+       font-size: 1.5em;
+       padding-left: .5em;
+       padding-right: .5em;
+       padding-top: .5em;
+       padding-bottom: .5em;
+       background: #EE1B49;
+       box-shadow: inset 0 -1em rgba(0, 0, 0, .04), 0 0 .5em rgba(0, 0, 0, .5);
+       border-radius: .2em;
+   }
+
+   .popup-container {
+       position: fixed;
+       opacity: 0;
+       transition: 200ms ease-in-out;
+       background-color: rgba(0, 0, 0, .3);
+       pointer-events: none;
+   }
+
+   .popup-container.show {
+       opacity: 1;
+       pointer-events: auto;
+       transition: 200ms ease-in-out;
+   }
+
+   .popupkop {
+       font-family: 'Antic Didone', serif;
+       justify-content: center;
+       font-size: 1.5em;
+       font-weight: bold;
+   }
+
+   .popuptekst {
+       font-family: 'Antic Didone', serif;
+       justify-content: center;
+       font-size: 1em;
+       font-weight: bold;
+   }
+
+   .divpopup {
+       position: fixed;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       background-color: white;
+       border-radius: 1em;
+       border: solid;
+       border-color: #EE1B49;
+       -webkit-box-shadow: 0 .625em .375em -.188px #777;
+       padding: 1em 5em;
+       width: 70%;
+       max-width: 70%;
+       text-align: center;
+   }
+
+   /*breakpoints*/
+
+   @media (min-width:40em) {
+       .covers {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           grid-gap: 2em;
+           padding: 1em;
+       }
+   }
+
+   @media (min-width:40em) {
+       .inspog {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           grid-gap: .2em;
+           padding: 1em;
+       }
+   }
+
+   @media (min-width:60em) {
+       .inspog {
+           display: grid;
+           grid-template-columns: 1fr 1fr 1fr;
+           grid-gap: .2em;
+           padding: 1em;
+       }
+   }
